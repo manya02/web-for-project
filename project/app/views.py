@@ -6,7 +6,8 @@ def index(request):
         name= request.POST["name"]
         email=request.POST["email"]
         ship=request.POST["ship"]
-        context = Contact(name=name,email=email,ship=ship)
+        pro=request.POST["pro"]
+        context = Contact(name=name,email=email,ship=ship,pro=pro)
         context.save()
     return render(request,'app/index.html')
     
