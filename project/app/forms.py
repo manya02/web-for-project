@@ -2,13 +2,13 @@
 
 
 from django import forms
-from .models import img_upload
+from .models import ImageUpload
 from tkinter import Image
 
 
 class ImageFrom(forms.ModelForm):
     
     class Meta:
-        model = img_upload
+        model = ImageUpload
         fields = ("photo",)
-        labels = {"photo":""}
+        labels = {"photo": ""}
