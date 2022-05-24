@@ -56,10 +56,21 @@
 						<div class="inner">
 							<header>
 								<h1>This is Fashion_ShowCase, An Enterance to Fashionable World<br />
+									 <form method="post"> 
+										 {% csrf_token %} 
 									<div class="field half">
 										<input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*">
 										
 									</div>
+									{% comment %} <form action="/" method="post" 
+									enctype="multipart/form-data">
+									<div class="field half">
+
+										{% csrf_token %}
+										{{form}}
+										<input type="submit"  value ="upload">
+									</div>
+									</form> {% endcomment %}
 									
 									<form>
 									<div class ="field half">

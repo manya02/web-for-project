@@ -11,4 +11,10 @@ class Contact (models.Model):
 
     def __str__(self):
         return self.name
+
+
+class img_upload(models.Model):
+    photo = models.ImageField(upload_to="my_img")
+    
+
 # Create your models here.
